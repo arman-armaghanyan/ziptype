@@ -29,9 +29,9 @@ node scripts/check-site.cjs
 
 ## Mac preview download
 
-[Download Ziptype 1.0.6 (7) for Mac](downloads/Ziptype-1.0.6-preview-r2.dmg) — macOS 13+, Apple Silicon and Intel. Developer ID signed and Apple notarized. Installer revision 2 adds the branded drag-to-Applications window; the app itself is unchanged.
+[Download Ziptype 1.0.6 (7) for Mac](downloads/Ziptype-1.0.6-preview-r3.dmg) — macOS 13+, Apple Silicon and Intel. Developer ID signed and Apple notarized. Installer revision 3 simplifies the window to two icons, a drag arrow, the wordmark and one instruction; the app itself is unchanged.
 
-**Preview, not a stable release:** real-app text expansion is still being verified; Google sign-in/sync is limited to configured test accounts. Back up an existing library and start with disposable, non-sensitive shortcuts. See [installation and limitations](downloads/Ziptype-1.0.6-preview-r2-notes.txt) and [SHA-256 checksums](downloads/SHA256SUMS.txt).
+**Preview, not a stable release:** real-app text expansion is still being verified; Google sign-in/sync is limited to configured test accounts. Back up an existing library and start with disposable, non-sensitive shortcuts. See [installation and limitations](downloads/Ziptype-1.0.6-preview-r3-notes.txt) and [SHA-256 checksums](downloads/SHA256SUMS.txt).
 
 Website download buttons link directly to the installer, with setup help available separately. The original installer URL is preserved for existing links.
 
