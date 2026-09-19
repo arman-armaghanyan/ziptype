@@ -1,0 +1,43 @@
+Ziptype for Mac — 1.0.6 (7), installer revision 3
+September 19, 2026
+
+What changed
+A smaller installer with only the Ziptype wordmark, app and folder icons, a drag
+arrow, and one short instruction. Setup information stays on the website. The app inside is
+unchanged from 1.0.6 (7); this is a packaging-only update, not a functionality fix.
+The installer is Developer ID signed, Apple notarized, and ticket-stapled.
+macOS 13 or later. Apple Silicon and Intel.
+
+Installation
+1. If you already use Ziptype, export a backup and quit the app first.
+2. Open Ziptype.dmg and drag Ziptype to Applications.
+3. Replace only the app. Do not delete its library or Application Support files.
+4. Open Ziptype from Applications. It stays available in the menu bar.
+5. Enable the installed copy in System Settings > Privacy & Security > Accessibility
+   to try text expansion. Library access does not need this permission.
+6. Save a disposable shortcut and try it in a standard text field.
+
+Compatibility and account availability
+- Real-world functionality was confirmed by the owner. Some custom editors may not support expansion.
+- Google sign-in and cloud sync remain limited to configured test accounts.
+- Clean second-Mac installation, update/data preservation and broader sync testing are not complete.
+- The existing privacy policy describes the earlier extension; account/sync disclosures and terms need review.
+
+Local use needs no account. Start with non-sensitive test shortcuts. Signing in
+alone does not upload your library. With an authorized test account, enabling
+sync can send your library, settings, usage statistics and achievements to
+Supabase after an explicit device/cloud review. Do not assume end-to-end encryption.
+
+If macOS rejects the installer, stop and contact support. Do not bypass Gatekeeper.
+Notarization does not establish feature correctness or guarantee against data loss.
+
+Help: https://www.ziptype.app/support.html
+Email: arman.armaghanyan@gmail.com
+Include the app version, macOS version and affected app/text field. Hide private
+text in screenshots; never send passwords, sign-in codes, tokens or private keys.
+
+SHA-256
+4cebdc983f8df13b988e2b88e44f36526110c620b5eebb4ba9902010077d2673  Ziptype.dmg
+
+Verify in Terminal from the download folder:
+shasum -a 256 Ziptype.dmg

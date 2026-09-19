@@ -27,15 +27,15 @@ Run the deployable-file checks with Node.js:
 node scripts/check-site.cjs
 ```
 
-## Mac preview download
+## Mac download
 
-[Download Ziptype 1.0.6 (7) for Mac](downloads/Ziptype-1.0.6-preview-r3.dmg) — macOS 13+, Apple Silicon and Intel. Developer ID signed and Apple notarized. Installer revision 3 simplifies the window to two icons, a drag arrow, the wordmark and one instruction; the app itself is unchanged.
+[Download Ziptype for Mac](downloads/Ziptype.dmg) — version 1.0.6 (7), macOS 13+, Apple Silicon and Intel. Developer ID signed and Apple notarized. The compact drag-and-drop installer and app are unchanged; only the download name and website labels have changed.
 
-**Preview, not a stable release:** real-app text expansion is still being verified; Google sign-in/sync is limited to configured test accounts. Back up an existing library and start with disposable, non-sensitive shortcuts. See [installation and limitations](downloads/Ziptype-1.0.6-preview-r3-notes.txt) and [SHA-256 checksums](downloads/SHA256SUMS.txt).
+The owner has confirmed real-world functionality. Google sign-in/sync remains limited to configured test accounts. See [installation and compatibility notes](downloads/Ziptype-notes.txt) and [SHA-256 checksums](downloads/SHA256SUMS.txt).
 
 Website download buttons link directly to the installer, with setup help available separately. The original installer URL is preserved for existing links.
 
-This repository includes the approved preview installer, not the native app source, signing keys, credentials, user libraries or internal test builds. The Chrome extension is distributed separately through its existing Web Store listing.
+This repository includes the approved installer, not the native app source, signing keys, credentials, user libraries or internal test builds. The Chrome extension is distributed separately through its existing Web Store listing.
 
 ## Attribution
 
