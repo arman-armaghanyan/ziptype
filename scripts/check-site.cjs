@@ -33,6 +33,13 @@ for(const file of fs.readdirSync(root).filter(f=>f.endsWith('.css'))){
   }
 }
 const library=fs.readFileSync(path.join(root,'prompts.html'),'utf8');
+const home=fs.readFileSync(path.join(root,'index.html'),'utf8');
+const downloadStart=home.indexOf('<section class="download sky"');
+const reviewStart=home.indexOf('<section class="reviews section-wrap"');
+assert(downloadStart >= 0 && reviewStart > downloadStart);
+assert(home.indexOf('</section>',downloadStart) < reviewStart,'Reviews must be a separate section after the CTA');
+assert.equal((home.match(/id="reviews"/g)||[]).length,1);
+assert(home.includes('5 ratings on Chrome') && home.includes('Rating checked September 2026'));
 const support=fs.readFileSync(path.join(root,'support.html'),'utf8');
 assert(support.includes('Ziptype for Mac is available to download.'));
 assert(support.includes('The app and installer are Developer ID signed and Apple notarized.'));
