@@ -11,7 +11,10 @@ for(const file of htmlFiles){
   for(const match of html.matchAll(/(?:src|href)="([^"]+)"/g)){
     if(/^(https?:|mailto:|data:|javascript:|\/\/)/.test(match[1]))continue;
     const [resource,fragment]=match[1].split('#');
-    const target=resource?decodeURIComponent(resource.split('?')[0]):file;
+    let target=resource?decodeURIComponent(resource.split('?')[0]):file;
+    if(target==='/') target='index.html';
+    else if(target.startsWith('/')) target=target.slice(1);
+    if(!path.extname(target)) target+='.html';
     const absolute=path.resolve(root,target);
     assert(absolute.startsWith(root+path.sep),file+': path outside website');
     assert(fs.existsSync(absolute),file+': missing '+target);
