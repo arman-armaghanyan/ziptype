@@ -2,25 +2,47 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Support — Ziptype</title>
-<meta name="description" content="Get help with Ziptype shortcuts and imports, or try the signed and notarized Mac preview.">
-<meta name="robots" content="index,follow"><meta name="theme-color" content="#ffffff">
+<title>Ziptype for Mac — Download &amp; setup</title>
+<meta name="description" content="Download the Ziptype Mac preview. Drag to Applications, open Ziptype, and get help setting up your text shortcuts.">
+<meta name="robots" content="index,follow"><meta name="theme-color" content="#bcecf5">
 <link rel="canonical" href="https://ziptype.app/support.html">
-<link rel="icon" href="favicon.png" type="image/png"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="prompts.css"><link rel="stylesheet" href="legal.css">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="support.css">
+<script src="navigation.js" defer></script>
+<script src="support.js" defer></script>
 </head>
-<body class="prompts-page legal-page">
+<body class="setup-page">
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="header catalog-header legal-header"><a class="wordmark" href="index.html" aria-label="Ziptype home">ziptype</a><a class="legal-back" href="prompts.html">Prompt library ↗</a></header>
-<main id="main" class="legal-main">
-<p class="legal-eyebrow">A little help</p>
-<h1>Let’s get you unstuck.</h1>
-<p class="legal-lead">Questions about shortcuts, importing, or sync? <a href="mailto:arman.armaghanyan@gmail.com?subject=Ziptype%20support">Email Ziptype support</a>.</p>
-<section><h2>What to include</h2><p>Tell us your Ziptype version, Chrome or macOS version, what you expected, and what happened. A screenshot of the error is helpful. Please hide personal text and never send passwords, sign-in codes, access tokens, or private keys.</p></section>
-<section id="mac-release"><h2>Ziptype for Mac · Preview</h2><p>Try version <strong>1.0.6 (7)</strong> for Apple Silicon and Intel Macs running macOS 13 or later. The app and installer are Developer ID signed and Apple notarized. This is an early preview, not a stable release.</p><p><strong>Before you download:</strong> text expansion in real applications is still being verified. You may encounter issues with expansion or custom editors. Google sign-in and cloud sync remain limited to configured test accounts. Local library use does not require an account. Export a backup before updating and start with non-sensitive test shortcuts.</p><p><a class="button" href="downloads/Ziptype-1.0.6-notarized.dmg" download data-conversion="mac_preview_download">Download Mac preview ↗</a></p><p><a href="downloads/Ziptype-1.0.6-preview-notes.txt">Installation and preview notes</a> · <a href="downloads/SHA256SUMS.txt">Verify the download checksum</a></p><ol><li>Quit an existing copy of Ziptype, then open the DMG and drag Ziptype.app into Applications. Replace only the app, not your saved library.</li><li>Open Ziptype from Applications. It stays available in the menu bar.</li><li>To try text expansion in other apps, enable Accessibility for that installed copy in System Settings → Privacy &amp; Security → Accessibility. Library access works without this permission.</li><li>Try a disposable shortcut in a standard text field. If it does not expand, report the app, field, and Ziptype version to support.</li></ol><p>If macOS rejects the installer, stop and contact support. Do not bypass Gatekeeper or delete your library to get past a warning. Notarization does not certify that every feature works or that updates cannot lose data.</p></section>
-<section><h2>Before updating or syncing</h2><p>Export a backup of your shortcuts first. Signing in does not always mean your library has uploaded. Check the sync status on the device containing the library you want to keep, and review the device and cloud versions before choosing either one.</p><p>Keep your existing extension installed. Removing it can remove its local data.</p></section>
-<section><h2>Prompt library</h2><p>Copy a preset or group from the <a href="prompts.html">prompt library</a>. Open its “How to use” guide for the instructions supported by your app version.</p></section>
-<section><h2>Privacy and terms</h2><p>The <a href="https://www.ziptype.app/privacy-policy.html">published Privacy Policy</a> describes the earlier local-only extension and needs updating for account and cloud-sync features before their public release. The <a href="terms.html">Terms of Use</a> are still a draft for review.</p></section>
+<main id="main">
+<section class="setup-hero" id="mac-release" aria-labelledby="mac-title">
+<header class="header">
+<a class="wordmark" href="index.html" aria-label="Ziptype home">ziptype</a>
+<nav class="desktop-nav" aria-label="Main navigation"><a href="index.html">Features</a><a href="prompts.html">Prompt library</a></nav>
+<div class="header-actions"><a class="setup-help-link" href="#help">Need a hand? ↗</a><button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button></div>
+<nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation" hidden><a href="index.html">Features</a><a href="prompts.html">Prompt library</a><a href="#help">Get help</a></nav>
+</header>
+<div class="setup-intro">
+<div class="setup-copy"><span class="setup-pill">Ziptype for Mac · Preview</span>
+<h1 id="mac-title">Less typing.<br>Starts here.</h1>
+<p>Your best words, just a shortcut away.</p>
+<a class="button" href="downloads/Ziptype-1.0.6-preview-r2.dmg" download data-conversion="mac_preview_download"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 17v4h14v-4"/></svg> Download for Mac</a>
+<p class="setup-meta">1.0.6 · macOS 13+ · Apple Silicon &amp; Intel</p>
+<p class="setup-preview">Preview: expansion is still being tested. Cloud sync is test-account only. <a href="#preview-notes">What to know ↗</a></p>
+</div>
+<div class="setup-visual" aria-hidden="true"><div class="setup-window-bar"><span><i></i><i></i><i></i></span><span>Install Ziptype</span><span></span></div><div class="setup-window-body"><p>A small move. A lot less typing.</p><div class="setup-drag"><div class="setup-drag-item"><img src="icon.png" width="88" height="88" alt=""><span>Ziptype</span></div><svg class="setup-arrow" viewBox="0 0 72 28"><path d="M2 14h66m-12-12 12 12-12 12"/></svg><div class="setup-drag-item"><svg class="setup-folder" viewBox="0 0 88 88"><path d="M7 24a7 7 0 0 1 7-7h23l8 8h29a7 7 0 0 1 7 7v38a7 7 0 0 1-7 7H14a7 7 0 0 1-7-7Z"/><path d="M8 34h72M35 62l9-18 9 18m-16-5h14"/></svg><span>Applications</span></div></div><p class="setup-drag-caption">Drag across. You’re almost there.</p></div></div>
+</div></section>
+<section class="setup-steps" aria-labelledby="setup-title"><div class="setup-section-heading"><span>A minute to make it yours</span><h2 id="setup-title">Three little steps.</h2></div><ol>
+<li><span class="setup-number">01</span><h3>Drag to Applications.</h3><p>Open the download and drag Ziptype into your Applications folder.</p></li>
+<li><span class="setup-number">02</span><h3>Let it lend a hand.</h3><p>Open Ziptype. Enable it in System Settings → Privacy &amp; Security → Accessibility for text expansion.</p></li>
+<li><span class="setup-number">03</span><h3>Try your first shortcut.</h3><p>Save a little text, give it a shortcut, and try it in a standard text field.</p></li>
+</ol></section>
+<section class="setup-help" id="help" aria-labelledby="help-title"><div><span class="setup-eyebrow">A little help</span><h2 id="help-title">Something not<br>quite right?</h2><p>Tell us what happened. We’ll take a look.</p><a class="text-link" href="mailto:arman.armaghanyan@gmail.com?subject=Ziptype%20support">Email Ziptype <span aria-hidden="true">↗</span></a></div><div class="setup-answers">
+<details id="preview-notes"><summary>About this preview <span aria-hidden="true">+</span></summary><div><p>This is an early preview, not a stable release. The app and installer are Developer ID signed and Apple notarized, but text expansion in real applications is still being verified. Some custom editors may not work.</p><p>Google sign-in and cloud sync remain limited to configured test accounts. Local use needs no account. Clean installation on another Mac, update/data preservation and broader sync testing are not complete.</p><p><a href="downloads/Ziptype-1.0.6-preview-r2-notes.txt">Release &amp; installation notes</a> · <a href="downloads/SHA256SUMS.txt">Download checksum</a></p></div></details>
+<details><summary>Updating or enabling sync? <span aria-hidden="true">+</span></summary><div><p>Export a backup first, then quit Ziptype before replacing the app in Applications. Do not delete your library or uninstall the Chrome extension.</p><p>Signing in alone does not upload your library. Review the device and cloud versions before choosing either one. If macOS rejects the app, contact us—do not bypass Gatekeeper.</p></div></details>
+<details><summary>Need help with a shortcut? <span aria-hidden="true">+</span></summary><div><p>Include the shortcut, app or text field, Ziptype version, macOS version, and what happened. Hide private text in screenshots; never send passwords, sign-in codes, tokens, or private keys.</p><p>For ready-made shortcuts, explore the <a href="prompts.html">prompt library</a> and its “How to use” guide.</p></div></details>
+<details><summary>Privacy &amp; terms <span aria-hidden="true">+</span></summary><div><p>The <a href="https://www.ziptype.app/privacy-policy.html">published Privacy Policy</a> describes the earlier local-only extension and needs updating for account and cloud-sync features before their public release. The <a href="terms.html">Terms of Use</a> are still a draft for review.</p></div></details>
+</div></section>
 </main>
-<footer class="catalog-footer"><a class="wordmark" href="index.html">ziptype</a><nav aria-label="Footer navigation"><a href="support.html" aria-current="page">Support</a><a href="terms.html">Terms</a><a href="https://www.ziptype.app/privacy-policy.html">Privacy</a><a href="index.html">Back to Ziptype ↗</a></nav></footer>
+<footer class="setup-footer"><a class="wordmark" href="index.html">ziptype</a><span>Less typing. More you.</span><nav aria-label="Footer navigation"><a href="prompts.html">Prompt library</a><a href="terms.html">Terms</a><a href="https://www.ziptype.app/privacy-policy.html">Privacy</a></nav></footer>
 </body>
 </html>

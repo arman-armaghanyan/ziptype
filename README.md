@@ -6,7 +6,7 @@ The static website for [ziptype.app](https://ziptype.app): text shortcuts, reusa
 
 - `index.html` — homepage with an interactive, local-only shortcut demo.
 - `prompts.html` — 524 reusable prompt templates, search and grouped preset copying.
-- `support.html` — support and Mac release status.
+- `support.html` — branded Mac setup guide and compact support disclosures.
 - `privacy-policy.html` — the existing published policy, preserved unchanged by this website update. Its local-only scope needs review before public account/sync rollout.
 - `terms.html` — terms draft, clearly labeled and excluded from search indexing.
 - `assets/` and `fonts/` — self-hosted images, icons and Geist fonts.
@@ -29,9 +29,11 @@ node scripts/check-site.cjs
 
 ## Mac preview download
 
-[Download Ziptype 1.0.6 (7) for Mac](downloads/Ziptype-1.0.6-notarized.dmg) — macOS 13+, Apple Silicon and Intel. Developer ID signed and Apple notarized.
+[Download Ziptype 1.0.6 (7) for Mac](downloads/Ziptype-1.0.6-preview-r2.dmg) — macOS 13+, Apple Silicon and Intel. Developer ID signed and Apple notarized. Installer revision 2 adds the branded drag-to-Applications window; the app itself is unchanged.
 
-**Preview, not a stable release:** real-app text expansion is still being verified; Google sign-in/sync is limited to configured test accounts. Back up an existing library and start with disposable, non-sensitive shortcuts. See [installation and limitations](downloads/Ziptype-1.0.6-preview-notes.txt) and [SHA-256 checksum](downloads/SHA256SUMS.txt).
+**Preview, not a stable release:** real-app text expansion is still being verified; Google sign-in/sync is limited to configured test accounts. Back up an existing library and start with disposable, non-sensitive shortcuts. See [installation and limitations](downloads/Ziptype-1.0.6-preview-r2-notes.txt) and [SHA-256 checksums](downloads/SHA256SUMS.txt).
+
+Website download buttons link directly to the installer, with setup help available separately. The original installer URL is preserved for existing links.
 
 This repository includes the approved preview installer, not the native app source, signing keys, credentials, user libraries or internal test builds. The Chrome extension is distributed separately through its existing Web Store listing.
 

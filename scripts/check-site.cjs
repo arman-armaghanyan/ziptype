@@ -35,10 +35,14 @@ assert(support.includes('This is an early preview, not a stable release.'));
 assert(support.includes('text expansion in real applications is still being verified'));
 assert(support.includes('Google sign-in and cloud sync remain limited to configured test accounts'));
 const crypto=require('node:crypto');
-const download=path.join(root,'downloads/Ziptype-1.0.6-notarized.dmg');
+const download=path.join(root,'downloads/Ziptype-1.0.6-preview-r2.dmg');
 const checksum=crypto.createHash('sha256').update(fs.readFileSync(download)).digest('hex');
-assert.equal(checksum,'a068804a9046d17c7594a4b742ed76244bea5d9642c4fd0554ebeba3e8557750');
+assert.equal(checksum,'b7ce4e78ec7b6e19813533304e886f71fe4e01df8eb7a69bdf91569d002ee829');
 assert(fs.readFileSync(path.join(root,'downloads/SHA256SUMS.txt'),'utf8').includes(checksum));
+for(const page of ['index.html','prompts.html','support.html']){
+  assert(fs.readFileSync(path.join(root,page),'utf8').includes('href="downloads/Ziptype-1.0.6-preview-r2.dmg" download'),page+': direct download missing');
+}
+assert(support.includes('id="preview-notes"') && support.includes('Three little steps.'));
 assert.equal((library.match(/data-prompt-card\b/g)||[]).length,524);
 assert(fs.readFileSync(path.join(root,'terms.html'),'utf8').includes('content="noindex,follow"'));
 assert(!fs.readFileSync(path.join(root,'sitemap.xml'),'utf8').includes('terms.html'));
