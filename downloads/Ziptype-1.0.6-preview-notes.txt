@@ -1,0 +1,32 @@
+Ziptype for Mac — Preview 1.0.6 (7)
+September 19, 2026
+
+For Apple Silicon and Intel Macs running macOS 13 or later.
+Developer ID signed and Apple notarized. This is not a stable release.
+
+Known limitations
+- Text expansion in real applications is still being verified. Some editors may not work.
+- Google sign-in and cloud sync are limited to configured test accounts.
+- Clean installation on another Mac, upgrade/data preservation and broader sync testing are not complete.
+- The existing website privacy policy describes the older Chrome extension; updated account/sync disclosures and terms remain under review.
+
+Local library use does not require an account. Start with non-sensitive test shortcuts and export a backup before updating. Signing in alone does not upload your library. If using an authorized test account, enabling sync can send your library, settings, usage statistics and achievements to Supabase after an explicit local/cloud review. Do not assume data is end-to-end encrypted.
+
+Installation
+1. Quit Ziptype if it is running. Export a backup first if you already use it.
+2. Open Ziptype-1.0.6-notarized.dmg and drag Ziptype.app into Applications.
+3. Replace only the application. Do not delete its saved library or Application Support files.
+4. Open Ziptype. It remains available from the menu bar.
+5. To try expansion in other apps, enable this installed copy under System Settings > Privacy & Security > Accessibility. Library access works without this permission.
+6. Create a disposable shortcut, try it in a standard text field, and report any issue.
+
+If macOS rejects the intended installer, stop and contact support. Do not bypass Gatekeeper. Notarization does not establish feature correctness or guarantee against data loss.
+
+Support: arman.armaghanyan@gmail.com
+Include Ziptype/macOS version, the app/text field and what happened. Hide private text; never send passwords, tokens or private keys.
+
+SHA-256
+a068804a9046d17c7594a4b742ed76244bea5d9642c4fd0554ebeba3e8557750  Ziptype-1.0.6-notarized.dmg
+
+Verify in Terminal from the folder containing the download:
+shasum -a 256 Ziptype-1.0.6-notarized.dmg

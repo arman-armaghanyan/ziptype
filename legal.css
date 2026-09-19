@@ -1,0 +1,15 @@
+.legal-header{display:flex;justify-content:space-between}
+.legal-back{font-size:12px;color:#747477}
+.legal-main{max-width:760px;margin:0 auto;padding:70px 24px 15px}
+.legal-eyebrow{font:12px "Geist Mono",monospace;color:#8b8b90;margin-bottom:22px}
+.legal-main h1{font-size:52px;letter-spacing:-2px;line-height:1.1;margin-bottom:28px}
+.legal-notice{padding:20px 22px;border:1px solid #ddddE5;background:#f7f7fa;border-radius:12px;margin-bottom:28px}
+.legal-notice strong{font-size:13px;font-weight:550}
+.legal-main p{font-size:14px;line-height:1.85;color:#737377}
+.legal-notice p{font-size:12px;margin-top:8px}
+.legal-main .legal-lead{font-size:17px;color:#4c4c50}
+.legal-main section{padding:30px 0;border-bottom:1px solid #ececef}
+.legal-main h2{font-size:21px;letter-spacing:-.5px;margin-bottom:13px}
+.legal-main a{text-decoration:underline;text-underline-offset:3px;color:#37373c}
+.legal-review{border:0!important}
+@media(max-width:650px){.legal-main{padding-top:42px}.legal-main h1{font-size:39px;letter-spacing:-1.3px}.legal-main h2{font-size:20px}.legal-main p{font-size:13px}.legal-notice{padding:17px}.legal-header .legal-back{font-size:11px}}
